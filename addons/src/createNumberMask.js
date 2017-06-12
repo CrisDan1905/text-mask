@@ -93,8 +93,8 @@ export default function createNumberMask({
 
       if (fraction) {
         if (typeof decimalLimit === number) {
-          let float = parseFloat("0."+fraction).toFixed(decimalLimit);
-          fraction = float.split('.')[1];
+          let float = parseFloat('0.' + fraction).toFixed(decimalLimit)
+          fraction = float.split('.')[1]
         }
         mask = mask.concat(fraction)
       }
